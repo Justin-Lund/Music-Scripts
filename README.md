@@ -11,6 +11,7 @@ Replace the extension types & the ffmpeg command paramaters as needed.
 
 [ffmpeg](https://www.ffmpeg.org/) must be in your PATH directory ([Instructions](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/))
 
+&nbsp;
 
 ## Prefix Remover
 
