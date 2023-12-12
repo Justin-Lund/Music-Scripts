@@ -31,4 +31,6 @@ As a result, you end up with "Prefix Bass.wav", "Prefix Lead.wav", etc. as oppos
 
 Beatport downloads, unless an extended mix or remix, always tack "(Original Mix)" onto the end of the song title.
 
+This script also requires FFMpeg.
+
 I used to spend hours painstakingly manually renaming all the songs I got from beatport... so I automated it 😀
