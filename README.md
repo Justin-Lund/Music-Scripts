@@ -13,6 +13,7 @@ Replace the extension types & the ffmpeg command paramaters as needed.
 
 &nbsp;
 
+
 ## Prefix Remover
 
 Remove prefixes from file names.
@@ -22,6 +23,8 @@ Purpose: Renaming track stems from Ableton Live.
 In Ableton, when you export stems, you are forced to provide a track name prefix that will be appended to every file name.
 
 As a result, you end up with "Prefix Bass.wav", "Prefix Lead.wav", etc. as opposed to "Bass.wav" & "Lead.wav"
+
+&nbsp;
 
 
 ## Remove "(Original Mix)" From Song Titles
