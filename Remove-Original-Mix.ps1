@@ -7,7 +7,7 @@
     Requires FFMpeg to be installed in a PATH location.
 
 .PARAMETER titleCase
-    Correct song title casing to use Title Casing (Like This).
+    Correct song title field to use Title Casing (Like This).
 
 .EXAMPLE
     PS C:\scripts> .\Remove-Original-Mix.ps1
