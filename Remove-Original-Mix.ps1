@@ -29,6 +29,7 @@
    - Cannot be used simaltaneously with -output
 - Exclude phrases "a", "of", "the, etc from Title Casing unless it's the 1st word
 - Update output to show file name changes for Title Casing updates without (Original Mix) removal
+- Option to change "Feat." to "ft."
 
 #>
 
