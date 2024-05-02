@@ -12,13 +12,23 @@ Get-ChildItem .\ -Filter *.$InputExtension | ForEach-Object {
     $sampleRate = $properties[0]
     $bitDepth = $properties[1]
 
-    # Determine the appropriate sample_fmt and codec
-    $codec = "pcm_s${bitDepth}be"
-    $sampleFmt = "s${bitDepth}"
+    # Set defaults for codec and sample_fmt
+    $codec = "pcm_s16be"
+    $sampleFmt = "s16"
 
-    if ($bitDepth -eq 24) {
-        # If bit depth is 24, use s32 sample_fmt for pcm_s24be codec
-        $sampleFmt = "s32"
+    switch ($bitDepth) {
+        16 {
+            $sampleFmt = "s16"  # 16-bit files use s16 sample format with pcm_s16be codec
+            $codec = "pcm_s16be"
+        }
+        24 {
+            $sampleFmt = "s32"  # 24-bit files use s32 sample format with pcm_s24be codec
+            $codec = "pcm_s24be"
+        }
+        32 {
+            $sampleFmt = "s32"  # 32-bit files also use s32 sample format, but with pcm_s32be codec
+            $codec = "pcm_s32be"
+        }
     }
 
     $NewName = $_.Name.Remove($_.Name.Length - $_.Extension.Length) + ".$OutputExtension"
